@@ -19,20 +19,26 @@ Before running the application, you need to install its dependencies. Run the fo
 npm install
 ```
 
-### Step 4: Start the Application
+### Step 4: Correct the API URL in the `.env` file
+
+Determine the address of your backend, and write it in the `.env` file.
+
+NOTE: Because of that I think we should flip the order of instructions. They need a working backend before the frontend can run.
+
+### Step 5: Start the Application
 Now, try starting the application with:
 ```bash
 npm start
 ```
 
-### Step 5: Find Your IPv4 Address
+### Step 6: Find Your IPv4 Address
 To access the application from a browser, you need to find your local machine's IP address. In the terminal, run the following command:
 ```bash
 ipconfig
 ```
 Look for the `IPv4 Address` under your network adapter's details.
 
-### Step 8: Open the Application in Your Browser
+### Step 7: Open the Application in Your Browser
 Now, open your browser and go to the following URL, replacing `<ipaddress>` with your actual IPv4 address:
 ```
 http://<ipaddress>:PORT
