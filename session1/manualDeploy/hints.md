@@ -29,5 +29,4 @@ ipconfig
 Look for the `IPv4 Address` under your network adapter's section. 
 
 ## Hint: Open a firewall for the port
-
 You should be able to open the app on the IP address of your VM, not just `localhost`. Something like (but not exactly) `http://172.31.1.68:8000/`.
