@@ -1,6 +1,6 @@
 ## CI/CD Pipeline
 
-Your tasked with:
+You're tasked with:
 
 1. Build a simple Node.js Express application—or, for the ambitious, a Node.js backend + React frontend “full-stack” app.
 2. First, create a plan for source control, build steps, testing, and deployment.
