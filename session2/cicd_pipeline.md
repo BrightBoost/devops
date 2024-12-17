@@ -1,12 +1,13 @@
 ## CI/CD Pipeline
 
-You're tasked with:
+Your team is tasked to:
 
-1. Build a simple Node.js Express application—or, for the ambitious, a Node.js backend + React frontend “full-stack” app.
+1. Build a simple Node.js Express application — or, for the ambitious, a Node.js backend + React frontend "full-stack" app.
 2. First, create a plan for source control, build steps, testing, and deployment.
-3. Expected: By the end of the session, each group should have a functioning CI/CD pipeline that deploys their chosen app to a target environment (could be a local Docker container, a free Heroku account, GitHub Pages, or any other platform your group agrees upon).
+3. Expected: By the end of the session, each group should have a functioning CI/CD pipeline that deploys their chosen app to a target environment (preferably Azure, but could be a local Docker container, a free Heroku account, GitHub Pages, or any other platform your group agrees upon).
+4. Prepare to discuss your experience with your colleagues. How did it go? What was difficult? What alternatives did you consider?
 
-This approach encourages research, collaboration, and problem-solving. You won’t just follow a tutorial, you’ll design and build the pipeline yourselves.
+This approach encourages research, collaboration, and problem-solving as a team. You won’t just follow a tutorial, you’ll design and build the pipeline yourselves. Make sure, that all your teammates understand the setup you end up with.
 
 ---
 
@@ -28,13 +29,16 @@ Choose a stack that aligns with your skill set or interests. Some may prefer the
 
 ## Step 2: Research and Decide on CI/CD Tooling
 
-### **Examples of CI/CD Tools**  
+### **Examples of CI/CD Tools**
+
+- **Azure DevOps**: Preferable, but might not work on our accounts. Be ready for a fallback solution.
 - **GitHub Actions**: Easy to integrate with GitHub repos.  
 - **GitLab CI/CD**: Generous free tier.  
 - **Jenkins**: Flexible and open-source, can run locally or in Docker.  
 - **CircleCI / TravisCI**: Also popular hosted solutions with free tiers.
 
 Weigh high-level pros/cons of each platform, then decide which best fits the skill set of your group. The deciding factors might include:
+
  - Familiarity with the platform
  - Ease of setup
  - Available free credits or no-cost usage
@@ -61,11 +65,11 @@ You're encouraged to incorporate code linting, scanning for vulnerabilities, or 
 
 ## Step 4: Plan the Deployment Strategy
 
-Let each group propose your own deployment approach. Some ideas:
+We would like to hear from each team about their deployment approach. Some ideas:
 
 - **Docker-based**: Build a Docker image and run it locally or deploy to a free Docker hosting platform like Azure Container Instances (if credits allow) or a local Minikube cluster.  
 - **Platform as a Service**: Heroku free tier (for Express), Netlify (for React frontends), Render, or Railway.  
-- **Static Hosting**: If you only do a React frontend, GitHub Pages or Netlify can be quick wins.
+- **Static Hosting**: If you only do a React frontend, GitHub or GitLab Pages, or Netlify can be quick wins.
 
 Again, weigh the pros and cons: does the team want to learn containerization? Or is Heroku’s Git based autodeploy enough? No solution is “best” here; it’s about what fits the skills and the time constraints.
 
@@ -73,10 +77,11 @@ Again, weigh the pros and cons: does the team want to learn containerization? Or
 
 ## Step 5: Create Documentation / Present the Plan
 
-Before coding, you should document their intended approach:
+Before coding, you should briefly describe your intended approach:
+
 1. **Tech stack chosen**: Node.js alone or Node + React, etc.
 2. **CI/CD platform**: GitHub Actions, Jenkins, etc.
-3. **Pipeline stages**: Build, test, containerize, deploy.
+3. **Pipeline stages**: e.g. Build, test, containerize, deploy.
 4. **Deployment environment**: Docker local, Heroku, Netlify, etc.
 5. **Roles & responsibilities**: If multiple people in the group, who handles front-end vs. pipeline vs. deployment steps?
 
