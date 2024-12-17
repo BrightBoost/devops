@@ -19,7 +19,7 @@ Encourage participants to pick from a few recommended “presets” or choose th
 - Basic JavaScript/Node knowledge, maybe Express fundamentals.
 
 ### **Option B: Node.js + Express (backend) + React (frontend)**
-- More challenging. They need to handle a separate frontend build (Webpack, Create React App, or Vite) and integrate that build into the pipeline.
+- More challenging. You need to handle a separate frontend build (Webpack, Create React App, or Vite) and integrate that build into the pipeline.
 - Familiarity with frontend frameworks, Node scripting, build tools.
 
 Choose a stack that aligns with your skill set or interests. Some may prefer the simpler version, others might relish the full-stack challenge.
@@ -55,7 +55,7 @@ Weigh high-level pros/cons of each platform, then decide which best fits the ski
 4. **Deploy**  
    - Push Docker image to a registry (Docker Hub, GitHub Container Registry, etc.) *or* deploy directly to a hosting platform (Heroku, AWS, Netlify for frontend, etc.).
 
-You're encouraged to incorporate code linting, scanning for vulnerabilities, or coverage reporting if they have time. Please mind, real DevOps pipelines often have additional quality gates.
+You're encouraged to incorporate code linting, scanning for vulnerabilities, or coverage reporting if you have time. Please mind, real DevOps pipelines often have additional quality gates.
 
 ---
 
@@ -65,7 +65,7 @@ Let each group propose your own deployment approach. Some ideas:
 
 - **Docker-based**: Build a Docker image and run it locally or deploy to a free Docker hosting platform like Azure Container Instances (if credits allow) or a local Minikube cluster.  
 - **Platform as a Service**: Heroku free tier (for Express), Netlify (for React frontends), Render, or Railway.  
-- **Static Hosting**: If they only do a React frontend, GitHub Pages or Netlify can be quick wins.
+- **Static Hosting**: If you only do a React frontend, GitHub Pages or Netlify can be quick wins.
 
 Again, weigh the pros and cons: does the team want to learn containerization? Or is Heroku’s Git based autodeploy enough? No solution is “best” here; it’s about what fits the skills and the time constraints.
 
@@ -86,7 +86,7 @@ Before coding, you should document their intended approach:
 
 Finally, let's do it! Let's implement the pipeline in their chosen CI/CD platform. Rather than handing out step-by-step instructions:
 1. Checkout references to the official docs or DevOps tutorials for that platform (e.g., GitHub Actions docs, Jenkins docs).
-2. You're encouraged to troubleshoot pipeline errors themselves (with you or peers providing hints if you get stuck).
+2. You're encouraged to troubleshoot pipeline errors yourselves (with you or peers providing hints if you get stuck).
 3. At the end, each group should do a brief demo talking through the plan and showing the pipeline in action.
 
 ---
